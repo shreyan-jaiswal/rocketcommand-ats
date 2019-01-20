@@ -3,10 +3,10 @@
 using namespace std;
 
 class pi_controller{
-public:
+private:
   double p;
   double i;
-  double discrete;
-  pi_controller(double p, double i, double discrete);
-  double control(pair<double, double> e);
+public:
+  pi_controller(double p, double i);
+  double control(Matrix<2,1,double> e);
 };
